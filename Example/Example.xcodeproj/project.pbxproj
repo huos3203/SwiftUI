@@ -47,7 +47,7 @@
 		41FE99E922AAD7B0008135A0 /* EditButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE99E822AAD7B0008135A0 /* EditButtonPage.swift */; };
 		41FE99F022AADF9F008135A0 /* DatePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE99EF22AADF9F008135A0 /* DatePickerPage.swift */; };
 		D74985BC231634DA00C4D46D /* Window+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74985BB231634DA00C4D46D /* Window+Ext.swift */; };
-		F9B50FD623B21953004F9CB2 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B50FD523B21953004F9CB2 /* FirstView.swift */; };
+		F9B5100D23B3163E004F9CB2 /* boyerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B5100C23B3163E004F9CB2 /* boyerList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,7 +93,7 @@
 		41FE99E822AAD7B0008135A0 /* EditButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButtonPage.swift; sourceTree = "<group>"; };
 		41FE99EF22AADF9F008135A0 /* DatePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPage.swift; sourceTree = "<group>"; };
 		D74985BB231634DA00C4D46D /* Window+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Window+Ext.swift"; sourceTree = "<group>"; };
-		F9B50FD523B21953004F9CB2 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		F9B5100C23B3163E004F9CB2 /* boyerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boyerList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,7 +279,7 @@
 		F9B50FD423B21908004F9CB2 /* Boyer */ = {
 			isa = PBXGroup;
 			children = (
-				F9B50FD523B21953004F9CB2 /* FirstView.swift */,
+				F9B5100C23B3163E004F9CB2 /* boyerList.swift */,
 			);
 			path = Boyer;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = "晋先森";
+				ORGANIZATIONNAME = iTBoyer;
 				TargetAttributes = {
 					4196ABC322A97AB1008B8FD2 = {
 						CreatedOnToolsVersion = 11.0;
@@ -362,7 +362,6 @@
 				4196ABE722AA268A008B8FD2 /* TextFieldPage.swift in Sources */,
 				4161B32722AB68F600CD5A1B /* HStackPage.swift in Sources */,
 				D74985BC231634DA00C4D46D /* Window+Ext.swift in Sources */,
-				F9B50FD623B21953004F9CB2 /* FirstView.swift in Sources */,
 				4164489D22AA6D6500A93AF2 /* ImagePage.swift in Sources */,
 				4161B32922AB695A00CD5A1B /* VStackPage.swift in Sources */,
 				415F044B22AB9A96003E59FC /* AlertPage.swift in Sources */,
@@ -387,6 +386,7 @@
 				41C7E65E22B4A9680074D4F6 /* ModalPage.swift in Sources */,
 				4196ABDC22A97D61008B8FD2 /* PageRow.swift in Sources */,
 				4132A46322AD709300A8DBBE /* Color+Ext.swift in Sources */,
+				F9B5100D23B3163E004F9CB2 /* boyerList.swift in Sources */,
 				415F044922AB8801003E59FC /* SegmentedControlPage.swift in Sources */,
 				41FE99E922AAD7B0008135A0 /* EditButtonPage.swift in Sources */,
 				4132A45E22AD561500A8DBBE /* GroupPage.swift in Sources */,
