@@ -15,15 +15,20 @@ struct Test: View {
             VStack {
                 Spacer()
                 Text("添加cell").padding(.all, 8.0).background(Color.purple)
-                List(datas) { item in
                     VStack {
+                        List(datas) { item in
                         NavigationLink(destination: Text("Detail")) {
                             VStack(alignment: .leading) {
                                 Text(item.title)
                                     .font(.title)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color.purple)
+                                
                                 Text(item.subtitle)
+                                    .font(.body)
+                                    .foregroundColor(.red)
+                                    .padding(.top,12)
+
                                 Text(item.date)
                                     .font(.footnote)
                                     .fontWeight(.bold)
