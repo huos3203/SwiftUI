@@ -7,9 +7,10 @@
 //
 
 import SwiftUI
+import Combine
 
 struct Test: View {
-    let datas = testDatas
+    var datas = testDatas
     var body: some View {
         NavigationView {
             VStack {
@@ -18,26 +19,39 @@ struct Test: View {
                     VStack {
                         List(datas) { item in
                         NavigationLink(destination: Text("Detail")) {
-                            VStack(alignment: .leading) {
-                                Text(item.title)
-                                    .font(.title)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color.purple)
-                                
-                                Text(item.subtitle)
-                                    .font(.body)
-                                    .foregroundColor(.red)
-                                    .padding(.top,12)
+                            HStack {
+                                VStack {
+                                    Spacer()
+                                    Image(systemName: "moon.fill")
+                                        .foregroundColor(Color.red)
+                                    Text("icon")
+                                        .font(.footnote)
+                                        .foregroundColor(Color.gray)
+                                        .padding(.bottom)
+                                }
+                                VStack(alignment: .leading) {
+                                    Text(item.title)
+                                        .font(.title)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(Color.red)
+                                    
+                                    Text(item.subtitle)
+                                        .font(.body)
+                                        .lineLimit(1)
+                                        .foregroundColor(.red)
+                                        .padding([.top, .trailing],12)
 
-                                Text(item.date)
-                                    .font(.footnote)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color.gray)
-                                    .multilineTextAlignment(.leading)
+                                    Text(item.date)
+                                        .font(.footnote)
+                                        .foregroundColor(Color.gray)
+                                        .multilineTextAlignment(.leading)
+                                }
                             }
                         }
                     }
-                }.navigationBarItems(trailing: Text("设置"))
+                }.navigationBarItems(trailing: Button(action: {}) {
+                Text("设置")
+                })
                 Spacer()
             } .background(Color.blue)
         }
@@ -59,8 +73,9 @@ struct TestModel: Identifiable {
 }
 
 let testDatas = [
-        TestModel(title: "test1", subtitle: "test1 描述", date: "2019-09-09"),
-        TestModel(title: "test1", subtitle: "test1 描述", date: "2019-09-09"),
+        TestModel(title: "test1", subtitle: "ttest1 描述test1 描述test1 描述test1 描述test1 描述est1 描述", date: "2019-09-09"),
+        TestModel(title: "test1", subtitle: "test1 描述test1 描述test1 描述test1 描述test1 描述", date: "2019-09-09"),
         TestModel(title: "test1", subtitle: "test1 描述", date: "2019-09-09"),
         TestModel(title: "test1", subtitle: "test1 描述", date: "2019-09-09")
 ]
+
